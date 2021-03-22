@@ -1,0 +1,23 @@
+air
+_______ ________
+
+food
+_   _   _   _  _
+
+light
+_______ ________
+
+ph
+_______ ________
+
+temperatura
+_______ ________
+
+salinita'
+_    _   _   _ 
+
+od (se c'e' questa interrompi e posticipa tutte le altre)
+       _
+
+
+__________ questo e' il tempo di una giornata con la funzione attiva
