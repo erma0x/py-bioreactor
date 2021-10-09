@@ -1,74 +1,32 @@
 # Bioreactor backend software
-In Development: IoT and microbiology with Python, Raspberry and Arduino for a self-controlled system for the growth of microorganisms 
+In Development: IoT and microbiology with Python, Raspberry and Arduino for a self-controlled system for the growth of microorganisms
 
 
-Scarico in contemporanea
+### Food
+	instrumentation: solenoid valves, timers, relays, transistors
+	nutrients: CO2, Peptones, sugar, lipids, sterilized water 30min
 
-strumentazione
-	elettrovalvole
-	timer
-	rele'/transistor
+### OD
+	instrumentation: laser, photoresistor
+	date: OD value, measurement time, column
 
-nutrienti
-	CO2
-	Peptoni, zucchero, lipidi
-	Acqua sterilizzata 30min
 
-DB
-	tempo
-	quantita'
+### Salinity
+	instrumentation: solenoid valves (x2), timer
+	date: salinity value, measurement time, column
 
-OD
-	DB
-		valore OD
-		tempo misura
-		colonna
-	strumentazione
-		laser
-		fotoresistenza
+### pH
+	instrumentation: Phaccamentro, transistor
+	date: ph value, measurement time, column number
 
-Salinita'
-	strumentazione
-		2 elettrovalvole
-		timer
-	DB
-		valore 
-		tempo misura
-		colonna
+### Temperature
+	instruments: heating band, Peltie cell, thermometer
+	data: temperature value, measurement time, column number
 
-pH
-	DB
-		valore ph
-		tempo misura
-		colonna
-	strumentazione
-		Phaccamentro
-		transistor
+### Reservoir
+	instrumentation: solenoid valve
+	date: quantity left, measurement time, column number
 
-temperatura
-	strumentazione
-		fascia riscaldante
-		cella di Peltie'
-		termometro
-
-lettura temperatura
-	termometro
-	DB
-		valore
-		tempo
-		colonna
-
-reservoir
-	strumentazione
-		elettrovalvola
-	DB
-		tempo
-		quantita'
-
-aria
-	strumentazione
-		elettrovalvola
-		pompa peristalsica per l'aria
-	DB
-		intensita'
-		tempo ciclo on/off
+### Air
+	instrumentation: solenoid valve, peristalsic pump for air
+	date: intensity, on / off cycle time
