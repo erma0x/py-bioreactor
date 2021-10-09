@@ -12,7 +12,7 @@ class Bioreattore:
         #Posso metterli in ordine
         #Impostare tutti i pin di tutto
         self.colonna=input('Inserisci il numero della colonna (1,2,3) : ' )
-        while push in range(0:60):
+        while push in range(0,60):
             push=input('''Inserisci i pin del Bioreattore:
             1 - temperatura 
             2 - pH
@@ -23,7 +23,8 @@ class Bioreattore:
             7 - salinometro
             ''')
             if push==3:
-                pin_R, pin_G, pin_B,...
+                pin_R, pin_G, pin_B
+                    
 class ora(Bioreattore):
     Bioreattore.__init__ (self, colonna, misura, ora, on)
     def __init__(self, time=0):
@@ -37,6 +38,7 @@ class ora(Bioreattore):
     #now=ora.ora() -> DB
 #colonna_1.termometro.ora() bioreattore -> metodo termometro e dentro c'e' ora.
 #definisco per ogni sensore che ho una sottoclasse del bioreattore
+
 class od(Bioreattore):
         def __init__(self,sensore,num_misure,pin_fotoresistenza,pin_transistor,tempo_attesa,check:
             Bioreattore.__init__(self,colonna, misura, ora, on)
@@ -69,6 +71,7 @@ class od(Bioreattore):
             # inserire anche un intervallo di confidenza stimato
             # oppure errore della misura nella lista
             return (misura)
+            
 class light(Bioreattore):
     def __init__(self, misura, ora, on, frequenza, R, G, B, funzione, pinR, pinG, pinB, ciclo24h, light_on):
         Bioreattore.__init__(self,colonna,misura, ora, on,time)

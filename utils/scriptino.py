@@ -5,9 +5,9 @@ import time
 arduino = serial.Serial('/dev/tty.usbmodem1411', 9600)
 
 def onOffFunction():
-  command = raw_input("Type something..: (on/ off / bye )");
+  command = input("Type something..: (on/ off / bye )")
   if command =="on":
-	print "The LED is on..."
+	print("The LED is on...")
 	time.sleep(1)
 	arduino.write('H')
 	onOffFunction()
